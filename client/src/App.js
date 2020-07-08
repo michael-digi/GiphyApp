@@ -8,7 +8,7 @@ function App() {
   const [gifs, setGifs] = useState([])
   const handleSubmit = async (input) => {
     let gifs = await giphyAPI(input)
-    setGifs(gifs)
+    setGifs(gifs.data)
   }
   
   return (

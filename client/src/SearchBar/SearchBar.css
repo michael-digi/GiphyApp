@@ -10,3 +10,7 @@
 #searchButton {
   padding: 1.25%;
 }
+
+#searchButton:hover {
+  cursor: pointer;
+}
