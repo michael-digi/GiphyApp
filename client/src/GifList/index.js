@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Gif from '../Gif'
 import './GifList.css';
 
-function GifList() {
-
+function GifList(props) {
+  console.log(props.gifs)
   return (
     <div id ='gifContainer'>
       <Gif />

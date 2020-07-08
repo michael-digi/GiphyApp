@@ -2,10 +2,12 @@
 const express = require('express');
 // create new express app and save it as "app"
 const app = express();
+require('dotenv').config()
 // server configuration
 const PORT = 8080;
 const helmet = require('helmet')
 const cors = require('cors');
+const { giphyAPI } = require('./helpers');
 
 app.use(helmet())
 app.use(cors({
@@ -15,9 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 // create a route for the app
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
+app.get('/giphy', giphyAPI);
 
 // make the server listen to requests
 app.listen(PORT, () => {
