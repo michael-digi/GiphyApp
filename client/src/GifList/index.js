@@ -9,7 +9,7 @@ function GifList(props) {
   useEffect(() => {
     setGifList([])
     //if there is an error message, set the error to be displayed
-    if (props.error.length !== 0) {
+    if (props.error) {
       setGifList(props.error)
     }
     else {
@@ -33,3 +33,9 @@ function GifList(props) {
 }
 
 export default GifList;
+
+GifList.defaultProps = {
+  gifs: [],
+  loading: false,
+  error: ''
+};

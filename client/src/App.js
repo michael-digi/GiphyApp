@@ -17,8 +17,14 @@ function App() {
     setLoading(true)
     try {
       let gifs = await giphyAPI(input)
-      setGifs(gifs.data)
-      setLoading(false)
+      if (gifs.name === 'Error') {
+        setError('Error, please try again')
+        setLoading(false)
+      }
+      if (gifs.data) {
+        setGifs(gifs.data)
+        setLoading(false)
+      }
     } catch(err) {
       setError('Error, please try again')
       setLoading(false)

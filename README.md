@@ -19,7 +19,7 @@ If you don't feel like making a new file just for this, navigate to the helpers.
 
 With that done:
 
-1. Open two terminals. navigate into the giphy-app folder in both terminals, and then in one terminal, type<br />
+1. Open two terminals. navigate into the GiphyApp folder you just cloned in both terminals, and then in one terminal, type<br />
 ```cd client``` (to cd into the react client)<br />
 and in the other terminal type<br />
 ```cd server``` (to cd into the node server).
