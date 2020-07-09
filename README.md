@@ -12,29 +12,29 @@ GIPHY devloper documentation [here](https://developers.giphy.com/).
 
 ### Instructions
 Before doing anything, you need to add a GIPHY api key you can get from the link above. Once you have that, create a new file in the server folder called .env, where you will put one environmental variable.
-Create a variable called KEY (in all caps) and set it equal to the api key you got from the GIPHY developer website.
+Create a variable called KEY (in all caps) and set it equal to the api key you got from the GIPHY developer website. <br />
 If you don't feel like making a new file just for this, navigate to the helpers.js file and find the 'key' variable at the top. It should be set to process.env.KEY. Instead, set 'key' equal to the api key directly (in quotes as its a string). Be aware that if you then push this file to your own GitHub, the api key will be exposed.
 
 With that done:
 
-1. Open two terminals. navigate into the giphy-app folder in both terminals, and then in one terminal, type 
-`cd client` 
-(to cd into the react client), and in the other terminal type 
-`cd server` 
+1. Open two terminals. navigate into the giphy-app folder in both terminals, and then in one terminal, type
+```cd client``` 
+(to cd into the react client), and in the other terminal type <br />
+```cd server``` 
 (to cd into the node server)
-2. Type 
-`npm install` 
+2. Type <br />
+```npm install``` 
 in both terminals to download all necessary node modules
 3. Wait for the modules to download. In the terminal with the react client, type 
-`npm start` 
+```npm start``` 
 to begin the react server on port 3000.
 4. In the terminal for the node server, type either 
-`node app.js` 
+```node app.js``` 
 or 
-`nodemon start` 
+```nodemon start``` 
 to start the node server.
 
-The demo should now be running at [http://localhost:3000](http://localhost:3000)
+The demo should now be running at [http://localhost:3000](http://localhost:3000)!
 
 ## Available Scripts
 
