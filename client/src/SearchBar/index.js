@@ -12,7 +12,7 @@ function SearchBar(props) {
   }
 
   //allows submission of query by pressing the 'Enter' button
-  const handleKeyDown = (e) => {
+  const handleKeyDown = e => {
     if (e.keyCode === 13) props.handleSubmit(input)
   }
 

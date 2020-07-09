@@ -1,0 +1,21 @@
+{
+  "name": "giphyapp",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm install && npm start",
+    "server": "cd server && npm install && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-digi/GiphyApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michael-digi/GiphyApp/issues"
+  },
+  "homepage": "https://github.com/michael-digi/GiphyApp#readme"
+}

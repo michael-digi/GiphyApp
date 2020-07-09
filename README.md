@@ -19,15 +19,13 @@ If you don't feel like making a new file just for this, navigate to the helpers.
 
 With that done:
 
-1. Open two terminals. Navigate into the GiphyApp folder you just cloned in both terminals, and then in one terminal, type<br />
-```cd client``` (to cd into the react client)<br />
-and in the other terminal type<br />
-```cd server``` (to cd into the node server).
-2. Type ```npm install``` in both terminals to download all necessary node modules.
-3. Wait for the modules to download. In the terminal with the react client, type<br />
-```npm start``` to begin the react server on port 3000.
-4. In the terminal for the node server, type<br />
-```node app.js``` to start the node server.
+1. Open two terminals. Navigate into the GiphyApp root folder (in both terminals) you just cloned, and then in one terminal, type<br />
+```npm run client```<br />
+to start the React app (this will cd into the 'client', do an 'npm install', and then 'npm start')
+
+2. In the other terminal (which is also in the Giphy root folder) type<br />
+```npm run server```<br />
+to start the Node server (this will cd in the 'server', do an 'npm install', and then run 'node app.js')
 
 The demo should now be running at [http://localhost:3000](http://localhost:3000)!
 
