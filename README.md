@@ -24,8 +24,8 @@ and in the other terminal type<br />
 2. Type ```npm install``` in both terminals to download all necessary node modules.
 3. Wait for the modules to download. In the terminal with the react client, type<br />
 ```npm start``` to begin the react server on port 3000.
-4. In the terminal for the node server, type either<br />
-```node app.js``` or ```nodemon start``` to start the node server.
+4. In the terminal for the node server, type<br />
+```node app.js``` to start the node server.
 
 The demo should now be running at [http://localhost:3000](http://localhost:3000)!
 
