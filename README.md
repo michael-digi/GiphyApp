@@ -15,7 +15,7 @@ Run ```git clone https://github.com/michael-digi/GiphyApp.git``` on your termina
 
 Before doing anything, you need to add a GIPHY api key you can get from the link above. Once you have that, create a new file in the server folder called .env, where you will put one environmental variable.
 Create a variable called KEY (in all caps) and set it equal to the api key you got from the GIPHY developer website. <br /><br />
-If you don't feel like making a new file just for this, navigate to the helpers.js file and find the 'key' variable at the top. It should be set to process.env.KEY. Instead, set 'key' equal to the api key directly (in quotes as its a string). Be aware that if you then push this file to your own GitHub, the api key will be exposed.
+If you don't feel like making a new file just for this, navigate to the helpers.js file in the server folder and find the 'key' variable at the top. It should be set to process.env.KEY. Instead, set 'key' equal to the api key directly (in quotes as its a string). Be aware that if you then push this file to your own GitHub, the api key will be exposed.
 
 With that done:
 
