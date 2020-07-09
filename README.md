@@ -1,5 +1,41 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+A simple demo of the GIPHY api. It accepts a search term and displays the results in a grid (be aware there are no filters in place)
+
+## How to Run this Application
+
+This application utilizes both React and Node running concurrently on two separate servers. It also requires a GIPHY api key to be placed as a constant variable in a .env file that you will add.
+
+GIPHY devloper documentation [here](https://developers.giphy.com/).
+
+### Instructions
+Before doing anything, you need to add a GIPHY api key you can get from the link above. Once you have that, create a new file in the server folder called .env, where you will put one environmental variable.
+Create a variable called KEY (in all caps) and set it equal to the api key you got from the GIPHY developer website.
+If you don't feel like making a new file just for this, navigate to the helpers.js file and find the 'key' variable at the top. It should be set to process.env.KEY. Instead, set 'key' equal to the api key directly (in quotes as its a string). Be aware that if you then push this file to your own GitHub, the api key will be exposed.
+
+With that done:
+
+1. Open two terminals. navigate into the giphy-app folder in both terminals, and then in one terminal, type 
+`cd client` 
+(to cd into the react client), and in the other terminal type 
+`cd server` 
+(to cd into the node server)
+2. Type 
+`npm install` 
+in both terminals to download all necessary node modules
+3. Wait for the modules to download. In the terminal with the react client, type 
+`npm start` 
+to begin the react server on port 3000.
+4. In the terminal for the node server, type either 
+`node app.js` 
+or 
+`nodemon start` 
+to start the node server.
+
+The demo should now be running at [http://localhost:3000](http://localhost:3000)
+
 ## Available Scripts
 
 In the project directory, you can run:

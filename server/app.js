@@ -16,7 +16,7 @@ app.use(cors({
 }))
 app.use(express.json());
 
-// create a route for the app
+// route access from the front end to query the GIPHY api
 app.get('/giphy', giphyAPI);
 
 // make the server listen to requests

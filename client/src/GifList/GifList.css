@@ -1,6 +1,15 @@
+/* main container uses css grid, with columns set to repeat. The min width of each item in the grid is 
+set to 250px, and as the window expands, it will try to fill the space with as many 250px divs or img's
+as possible. If the window gets too small to allow the current amount of divs or img's to each remain
+at least 250px, it will reduce the number per row (from 4 to 3, 3 to 2 etc).
+*/
 #gifContainer {
-  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  margin-top: 5%;
+  color: white;
+  font-size: 2rem;
+  justify-items: center;
+  align-items: center;
   height: 100%;
 }
